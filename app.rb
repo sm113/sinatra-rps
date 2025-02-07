@@ -21,7 +21,7 @@ end
 get("/rock") do
   move = generate_move
   @opp_move = "They played #{move}!"
-  @result = "You "
+  @result = "We "
   if move == "rock"
     @result += "tied! Try again!"
   elsif move == "paper"
@@ -37,7 +37,7 @@ end
 get("/paper") do
   move = generate_move
   @opp_move = "They played #{move}!"
-  @result = "You "
+  @result = "We "
   if move == "rock"
     @result += "won! Woohoo!"
   elsif move == "paper"
@@ -52,7 +52,7 @@ end
 get("/scissors") do
   move = generate_move
   @opp_move = "They played #{move}!"
-  @result = "You "
+  @result = "We "
   if move == "rock"
     @result += "lost! Maybe next time!"
   elsif move == "paper"
